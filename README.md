@@ -1,1 +1,2 @@
-# blanchardЭто моя дипломная работа на Skillbox
+# blanchard
+Это моя дипломная работа на Skillbox
