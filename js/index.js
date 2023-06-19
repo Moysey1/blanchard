@@ -228,6 +228,22 @@ new Swiper('.events__swiper', {
   }
 })
 
+
+// tippy
+
+
+tippy('[data-tippy-content]' , {
+  duration: 0,
+  arrow: true,
+  delay: [1000, 200],
+  trigger: 'click',
+  hideOnClick: 'toggle',
+
+});
+
+
+
+
 // project
 
 const tooltip = document.querySelectorAll('.project__tooltip');
