@@ -88,6 +88,11 @@ const swiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
   spaceBetween: 10,
   speed: 2200,
+
+  a11y: {
+    slideLabelMessage:'Изображение слайда главного блока {{index}} / {{slidesLength}}'
+  },
+
   autoplay: {
     delay: 2000
   },
@@ -100,7 +105,7 @@ const swiper = new Swiper('.hero__swiper', {
 
 const element = document.querySelector('.gallery-left__select');
 const choices = new Choices(element,{
-  allowHTML: false,
+  allowHTML: true,
   searchEnabled: false,
   placeholder: true,
   itemSelectText: '',
@@ -110,6 +115,12 @@ new Swiper('.gallery-right__swiper', {
   spaceBetween: 37,
   slidesPerView: 3,
   slidesPerGroup: 3,
+  a11y: {
+    enabled: true,
+    nextSlideMessage: 'Переключение группы слайдов вперед',
+    prevSlideMessage: 'Переключение группы слайдов назад',
+    slideLabelMessage:'Изображение слайда Галереи {{index}} / {{slidesLength}}'
+  },
   navigation: {
     nextEl: '.gallery-navigation__next',
     prevEl: '.gallery-navigation__prev',
@@ -177,6 +188,12 @@ new Swiper('.events__swiper', {
   spaceBetween: 50,
   slidesPerView:3,
   slidesPerGroup:3,
+  a11y: {
+    enabled: true,
+    nextSlideMessage: 'Переключение группы слайдов вперед',
+    prevSlideMessage: 'Переключение группы слайдов назад',
+    slideLabelMessage:'Событие {{index}} / {{slidesLength}}'
+  },
   navigation: {
     el: '.events__navigation',
     nextEl: '.events__swiper-button-next',
@@ -258,6 +275,12 @@ new Swiper ('.partners__swiper', {
   spaceBetween: 50,
   slidesPerView:3,
   slidesPerGroup:3,
+  a11y: {
+    enabled: true,
+    nextSlideMessage: 'Переключение группы слайдов вперед',
+    prevSlideMessage: 'Переключение группы слайдов назад',
+    slideLabelMessage:'Партнер {{index}} / {{slidesLength}}'
+  },
   navigation: {
     nextEl: '.partners__swiper-button-next',
     prevEl: '.partners__swiper-button-prev',
